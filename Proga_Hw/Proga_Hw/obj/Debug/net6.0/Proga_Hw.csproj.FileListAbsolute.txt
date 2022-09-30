@@ -1,0 +1,15 @@
+C:\Программирование\Proga_Hw\Proga_Hw\bin\Debug\net6.0\Proga_Hw.exe
+C:\Программирование\Proga_Hw\Proga_Hw\bin\Debug\net6.0\Proga_Hw.deps.json
+C:\Программирование\Proga_Hw\Proga_Hw\bin\Debug\net6.0\Proga_Hw.runtimeconfig.json
+C:\Программирование\Proga_Hw\Proga_Hw\bin\Debug\net6.0\Proga_Hw.dll
+C:\Программирование\Proga_Hw\Proga_Hw\bin\Debug\net6.0\ref\Proga_Hw.dll
+C:\Программирование\Proga_Hw\Proga_Hw\bin\Debug\net6.0\Proga_Hw.pdb
+C:\Программирование\Proga_Hw\Proga_Hw\obj\Debug\net6.0\Proga_Hw.csproj.AssemblyReference.cache
+C:\Программирование\Proga_Hw\Proga_Hw\obj\Debug\net6.0\Proga_Hw.GeneratedMSBuildEditorConfig.editorconfig
+C:\Программирование\Proga_Hw\Proga_Hw\obj\Debug\net6.0\Proga_Hw.AssemblyInfoInputs.cache
+C:\Программирование\Proga_Hw\Proga_Hw\obj\Debug\net6.0\Proga_Hw.AssemblyInfo.cs
+C:\Программирование\Proga_Hw\Proga_Hw\obj\Debug\net6.0\Proga_Hw.csproj.CoreCompileInputs.cache
+C:\Программирование\Proga_Hw\Proga_Hw\obj\Debug\net6.0\Proga_Hw.dll
+C:\Программирование\Proga_Hw\Proga_Hw\obj\Debug\net6.0\ref\Proga_Hw.dll
+C:\Программирование\Proga_Hw\Proga_Hw\obj\Debug\net6.0\Proga_Hw.pdb
+C:\Программирование\Proga_Hw\Proga_Hw\obj\Debug\net6.0\Proga_Hw.genruntimeconfig.cache

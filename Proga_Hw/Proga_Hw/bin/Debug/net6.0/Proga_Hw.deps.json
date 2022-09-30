@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Proga_Hw/1.0.0": {
+        "runtime": {
+          "Proga_Hw.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Proga_Hw/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
