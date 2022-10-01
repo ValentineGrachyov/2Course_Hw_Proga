@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Программирование\\Proga_Hw\\Proga_Hw\\Proga_Hw.csproj": {}
+    "C:\\Программирование\\2Course_Hw_Proga\\Proga_Hw\\Proga_Hw\\Proga_Hw.csproj": {}
   },
   "projects": {
-    "C:\\Программирование\\Proga_Hw\\Proga_Hw\\Proga_Hw.csproj": {
+    "C:\\Программирование\\2Course_Hw_Proga\\Proga_Hw\\Proga_Hw\\Proga_Hw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Программирование\\Proga_Hw\\Proga_Hw\\Proga_Hw.csproj",
+        "projectUniqueName": "C:\\Программирование\\2Course_Hw_Proga\\Proga_Hw\\Proga_Hw\\Proga_Hw.csproj",
         "projectName": "Proga_Hw",
-        "projectPath": "C:\\Программирование\\Proga_Hw\\Proga_Hw\\Proga_Hw.csproj",
+        "projectPath": "C:\\Программирование\\2Course_Hw_Proga\\Proga_Hw\\Proga_Hw\\Proga_Hw.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Программирование\\Proga_Hw\\Proga_Hw\\obj\\",
+        "outputPath": "C:\\Программирование\\2Course_Hw_Proga\\Proga_Hw\\Proga_Hw\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -9,7 +9,7 @@ namespace Proga_Hw
         static void Main(string[] args)
         {
             var server = new Http_server();
-            server.Start("http://localhost:8888/connection/");
+            server.Start("http://localhost:8888/google/");
         }
     }
 }
