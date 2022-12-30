@@ -1,0 +1,15 @@
+C:\Программирование\CustomProtocol\bin\Debug\net6.0\CustomProtocol.exe
+C:\Программирование\CustomProtocol\bin\Debug\net6.0\CustomProtocol.deps.json
+C:\Программирование\CustomProtocol\bin\Debug\net6.0\CustomProtocol.runtimeconfig.json
+C:\Программирование\CustomProtocol\bin\Debug\net6.0\CustomProtocol.dll
+C:\Программирование\CustomProtocol\bin\Debug\net6.0\CustomProtocol.pdb
+C:\Программирование\CustomProtocol\obj\Debug\net6.0\CustomProtocol.csproj.AssemblyReference.cache
+C:\Программирование\CustomProtocol\obj\Debug\net6.0\CustomProtocol.GeneratedMSBuildEditorConfig.editorconfig
+C:\Программирование\CustomProtocol\obj\Debug\net6.0\CustomProtocol.AssemblyInfoInputs.cache
+C:\Программирование\CustomProtocol\obj\Debug\net6.0\CustomProtocol.AssemblyInfo.cs
+C:\Программирование\CustomProtocol\obj\Debug\net6.0\CustomProtocol.csproj.CoreCompileInputs.cache
+C:\Программирование\CustomProtocol\obj\Debug\net6.0\CustomProtocol.dll
+C:\Программирование\CustomProtocol\obj\Debug\net6.0\ref\CustomProtocol.dll
+C:\Программирование\CustomProtocol\obj\Debug\net6.0\CustomProtocol.pdb
+C:\Программирование\CustomProtocol\obj\Debug\net6.0\CustomProtocol.genruntimeconfig.cache
+C:\Программирование\CustomProtocol\obj\Debug\net6.0\refint\CustomProtocol.dll

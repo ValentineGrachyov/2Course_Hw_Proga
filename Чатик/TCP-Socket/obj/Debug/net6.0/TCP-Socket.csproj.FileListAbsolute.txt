@@ -1,0 +1,15 @@
+C:\Программирование\Чатик\TCP-Socket\bin\Debug\net6.0\TCP-Socket.exe
+C:\Программирование\Чатик\TCP-Socket\bin\Debug\net6.0\TCP-Socket.deps.json
+C:\Программирование\Чатик\TCP-Socket\bin\Debug\net6.0\TCP-Socket.runtimeconfig.json
+C:\Программирование\Чатик\TCP-Socket\bin\Debug\net6.0\TCP-Socket.dll
+C:\Программирование\Чатик\TCP-Socket\bin\Debug\net6.0\TCP-Socket.pdb
+C:\Программирование\Чатик\TCP-Socket\obj\Debug\net6.0\TCP-Socket.csproj.AssemblyReference.cache
+C:\Программирование\Чатик\TCP-Socket\obj\Debug\net6.0\TCP-Socket.GeneratedMSBuildEditorConfig.editorconfig
+C:\Программирование\Чатик\TCP-Socket\obj\Debug\net6.0\TCP-Socket.AssemblyInfoInputs.cache
+C:\Программирование\Чатик\TCP-Socket\obj\Debug\net6.0\TCP-Socket.AssemblyInfo.cs
+C:\Программирование\Чатик\TCP-Socket\obj\Debug\net6.0\TCP-Socket.csproj.CoreCompileInputs.cache
+C:\Программирование\Чатик\TCP-Socket\obj\Debug\net6.0\TCP-Socket.dll
+C:\Программирование\Чатик\TCP-Socket\obj\Debug\net6.0\ref\TCP-Socket.dll
+C:\Программирование\Чатик\TCP-Socket\obj\Debug\net6.0\TCP-Socket.pdb
+C:\Программирование\Чатик\TCP-Socket\obj\Debug\net6.0\TCP-Socket.genruntimeconfig.cache
+C:\Программирование\Чатик\TCP-Socket\obj\Debug\net6.0\refint\TCP-Socket.dll

@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.IO;
+using HttpServer.Attributes;
+using System.Reflection;
+using System.Text.Json;
 
 namespace HttpServer
 {
@@ -31,7 +34,7 @@ namespace HttpServer
             {
                 Console.WriteLine("Запуск сервера...");
                 _httpListener.Start();
-                Console.WriteLine("Ожидание подключений...");
+                Console.WriteLine("Ожидает подключения");
                 Status = ServerStatus.Start;
             }
 
@@ -49,44 +52,106 @@ namespace HttpServer
                 Console.WriteLine("Сервер уже остановлен");
         }
 
-        private void Listening()
+        private async void Listening()
         {
-            _httpListener.BeginGetContext(new AsyncCallback(ListenerCallback), _httpListener);
+            while (_httpListener.IsListening)
+            {
+                var context = await _httpListener.GetContextAsync();
+
+                if (MethodHandler(context)) { Listening(); };
+
+                MainSite(context.Request, context.Response);
+            }
+
         }
 
-        private void ListenerCallback(IAsyncResult result)
+        private bool MethodHandler(HttpListenerContext _httpContext)
         {
-            if (_httpListener.IsListening)
+            // объект запроса
+            HttpListenerRequest request = _httpContext.Request; 
+
+            // объект ответа
+            HttpListenerResponse response = _httpContext.Response;
+
+            if (_httpContext.Request.Url.Segments.Length < 2) return false;
+
+            string controllerName = _httpContext.Request.Url.Segments[1].Replace("/", "");
+
+            string[] strParams = _httpContext.Request.Url
+                                    .Segments
+                                    .Skip(2)
+                                    .Select(s => s.Replace("/", ""))
+                                    .ToArray();
+
+            var assembly = Assembly.GetExecutingAssembly();
+
+            var controller = assembly.GetTypes().Where(t => Attribute.IsDefined(t, typeof(HttpController)))
+                                     .FirstOrDefault(c => c.Name.ToLower() == controllerName.ToLower());
+
+            if (controller == null) return false;
+
+            var test = typeof(HttpController).Name;
+            var methods = controller.GetMethods().Where(t => t.GetCustomAttributes(true)
+                                                 .Any(attr => attr.GetType().Name == $"Http{_httpContext.Request.HttpMethod}"));
+
+            var method = methods.FirstOrDefault(x => _httpContext.Request.HttpMethod switch
+                {
+                    "GET" => x.GetCustomAttribute<HttpGET>().MethodURI == strParams[0],
+                    "POST" => x.GetCustomAttribute<HttpPOST>().MethodURI == strParams[0],
+                }) ;
+                                                 
+
+            if (method == null) return false;
+
+            object[] queryParams = null;
+
+            switch (strParams[0])
             {
-                var _httpContext = _httpListener.EndGetContext(result);
+                case "getaccount":
+                    object[] t = new object[1] {Convert.ToInt32(strParams[1])};
+                    queryParams = t;
+                    break;
+                case "getbyid":
+                    object[] temp = new object[1] { Convert.ToInt32(strParams[1]) };
+                    queryParams = temp;
+                    break;
+                case "saveaccount":
+                    //колхоз, как красиво написать?? (чтобы не переименовывать переменную)
+                    object[] temp1 = new object[2] { Convert.ToString(strParams[1]), Convert.ToString(strParams[2]) };
+                    queryParams = temp1;
+                    break;
 
-                //объект ответа
-                var response = _httpContext.Response;
+            }
 
-                var request = _httpContext.Request;
+            var ret = method.Invoke(Activator.CreateInstance(controller), queryParams);
 
+            response.ContentType = "Application/json";
+
+            byte[] buffer = Encoding.ASCII.GetBytes(JsonSerializer.Serialize(ret));
+            response.ContentLength64 = buffer.Length;
+
+            Stream output = response.OutputStream;
+            output.Write(buffer, 0, buffer.Length);
+
+            output.Close();
+
+            return true;
+        }
+
+
+        private void MainSite(HttpListenerRequest request, HttpListenerResponse response)
+        {
+            try
+            {
                 byte[] buffer;
 
                 var rawurl = request.RawUrl;
-                var fasfs = _serverSettings.Path;
-                if (Directory.Exists(_serverSettings.Path))
-                {
-                    buffer = Files.GetFile(request.RawUrl.Replace("%20", " "));
-                    
-                    if (buffer == null)
-                    {
-                        response.Headers.Set("Content-Type", "text/plain");
 
-                        response.StatusCode = (int)HttpStatusCode.NotFound;
-                        string err = "404 - not found";
-                        buffer = Encoding.UTF8.GetBytes(err);
-                    }
-                }
-                else
-                {
-                    string err = $"Directory '{_serverSettings.Path}' doesn't found";
-                    buffer = Encoding.UTF8.GetBytes(err);
-                }
+                buffer = Files.GetFile(rawurl.Replace("%20", " "));
+
+                Files.GetExtension(ref response, "." + rawurl);
+
+                if(buffer == null) { Show404(ref response, ref buffer); }
 
                 Stream output = response.OutputStream;
                 output.Write(buffer, 0, buffer.Length);
@@ -96,7 +161,25 @@ namespace HttpServer
 
                 Listening();
             }
+            catch
+            {
+                Console.WriteLine("Smth wrong");
+                Stop();
+            }
+
         }
+
+
+
+        private void Show404(ref HttpListenerResponse response, ref byte[] buffer)
+        {
+            response.Headers.Set("Content-Type", "text/html");
+            response.StatusCode = 404;
+            response.ContentEncoding = Encoding.UTF8;
+            string err = "<h1>4504<h1> <h2>The resource can not be found.<h2>";
+            buffer = Encoding.UTF8.GetBytes(err);
+        }
+
         public void Dispose()
         {
             Stop();

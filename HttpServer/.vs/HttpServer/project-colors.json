@@ -35,7 +35,17 @@
       "ProjectGuid": "145d36e6-76be-4a51-85cc-1474ab09b0af",
       "DisplayName": "HttpServer",
       "ColorIndex": 5
+    },
+    "8a4fc7df-ba86-41d8-b275-1f7cd594bbf5": {
+      "ProjectGuid": "8a4fc7df-ba86-41d8-b275-1f7cd594bbf5",
+      "DisplayName": "HttpServer",
+      "ColorIndex": 6
+    },
+    "4c66b703-55ce-4275-aa1d-1ae41a44d7f2": {
+      "ProjectGuid": "4c66b703-55ce-4275-aa1d-1ae41a44d7f2",
+      "DisplayName": "HttpServer",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 8
 }

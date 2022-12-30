@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\HttpServer\\HttpServer.csproj": {}
+    "C:\\Users\\User\\Desktop\\2Course_Hw_Proga\\HttpServer\\HttpServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\HttpServer\\HttpServer.csproj": {
+    "C:\\Users\\User\\Desktop\\2Course_Hw_Proga\\HttpServer\\HttpServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\HttpServer\\HttpServer.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\2Course_Hw_Proga\\HttpServer\\HttpServer.csproj",
         "projectName": "HttpServer",
-        "projectPath": "C:\\Users\\User\\Desktop\\HttpServer\\HttpServer.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\2Course_Hw_Proga\\HttpServer\\HttpServer.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\HttpServer\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\2Course_Hw_Proga\\HttpServer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +44,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            },
+            "runtime.native.System.Data.SqlClient.sni": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

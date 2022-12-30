@@ -1,0 +1,17 @@
+C:\Программирование\Чатик\Users\User2\obj\Debug\net6.0-windows\User2.csproj.AssemblyReference.cache
+C:\Программирование\Чатик\Users\User2\obj\Debug\net6.0-windows\User2.Form1.resources
+C:\Программирование\Чатик\Users\User2\obj\Debug\net6.0-windows\User2.csproj.GenerateResource.cache
+C:\Программирование\Чатик\Users\User2\obj\Debug\net6.0-windows\User2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Программирование\Чатик\Users\User2\obj\Debug\net6.0-windows\User2.AssemblyInfoInputs.cache
+C:\Программирование\Чатик\Users\User2\obj\Debug\net6.0-windows\User2.AssemblyInfo.cs
+C:\Программирование\Чатик\Users\User2\obj\Debug\net6.0-windows\User2.csproj.CoreCompileInputs.cache
+C:\Программирование\Чатик\Users\User2\bin\Debug\net6.0-windows\User2.exe
+C:\Программирование\Чатик\Users\User2\bin\Debug\net6.0-windows\User2.deps.json
+C:\Программирование\Чатик\Users\User2\bin\Debug\net6.0-windows\User2.runtimeconfig.json
+C:\Программирование\Чатик\Users\User2\bin\Debug\net6.0-windows\User2.dll
+C:\Программирование\Чатик\Users\User2\bin\Debug\net6.0-windows\User2.pdb
+C:\Программирование\Чатик\Users\User2\obj\Debug\net6.0-windows\User2.dll
+C:\Программирование\Чатик\Users\User2\obj\Debug\net6.0-windows\ref\User2.dll
+C:\Программирование\Чатик\Users\User2\obj\Debug\net6.0-windows\User2.pdb
+C:\Программирование\Чатик\Users\User2\obj\Debug\net6.0-windows\User2.genruntimeconfig.cache
+C:\Программирование\Чатик\Users\User2\obj\Debug\net6.0-windows\refint\User2.dll
